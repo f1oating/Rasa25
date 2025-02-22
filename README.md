@@ -2,20 +2,20 @@
 
 #Menus
 
-![Main](Images/Screenshot_2025-02-22_135534.png)
+![Main](Images/main.png)
 
-![Level](Images/Screenshot_2025-02-22_135711.png)
+![Level](Images/levels.png)
 
-![Pause](Images/Screenshot_2025-02-22_135816.png)
+![Pause](Images/pause.png)
 
 #Levels
 
-![1](Images/Screenshot_2025-02-22_135902.png)
+![1](Images/1.png)
 
-![2](Images/Screenshot_2025-02-22_135917.png)
+![2](Images/2.png)
 
-![3](Images/Screenshot_2025-02-22_135951.png)
+![3](Images/3.png)
 
-![4](Images/Screenshot_2025-02-22_140008.png)
+![4](Images/4.png)
 
-![5](Images/Screenshot_2025-02-22_140021.png)
+![5](Images/5.png)
