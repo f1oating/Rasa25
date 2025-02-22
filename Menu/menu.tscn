@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://e0hjg4jbb4ug"]
+
+[ext_resource type="Script" path="res://Menu/menu.gd" id="1_bj8hf"]
+[ext_resource type="PackedScene" uid="uid://b84gi54lglcbm" path="res://BG/bg.tscn" id="1_pb8pk"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_bj8hf")
+metadata/_edit_horizontal_guides_ = [-35.0]
+
+[node name="BG" parent="." instance=ExtResource("1_pb8pk")]
+
+[node name="Scene" type="Node2D" parent="."]
+
+[node name="Play" type="Button" parent="."]
+offset_left = 119.0
+offset_top = 105.0
+offset_right = 297.0
+offset_bottom = 162.0
+text = "Play"
+
+[node name="Levels" type="Button" parent="."]
+offset_left = 119.0
+offset_top = 181.0
+offset_right = 297.0
+offset_bottom = 238.0
+text = "Levels"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 119.0
+offset_top = 258.0
+offset_right = 297.0
+offset_bottom = 315.0
+text = "Quit"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://cce1c4ah2cep8"]
+
+[ext_resource type="Script" path="res://Levels/levels.gd" id="1_663l5"]
+[ext_resource type="PackedScene" uid="uid://b84gi54lglcbm" path="res://BG/bg.tscn" id="1_wcs5r"]
+
+[node name="Levels" type="Node2D"]
+script = ExtResource("1_663l5")
+
+[node name="BG" parent="." instance=ExtResource("1_wcs5r")]
+
+[node name="Buttons" type="Node2D" parent="."]
+
+[node name="Level1" type="Button" parent="Buttons"]
+offset_left = 185.0
+offset_top = 106.0
+offset_right = 258.0
+offset_bottom = 173.0
+text = "1"
+
+[node name="Level2" type="Button" parent="Buttons"]
+offset_left = 361.0
+offset_top = 107.0
+offset_right = 434.0
+offset_bottom = 174.0
+text = "2"
+
+[node name="Level3" type="Button" parent="Buttons"]
+offset_left = 541.0
+offset_top = 107.0
+offset_right = 614.0
+offset_bottom = 174.0
+text = "3"
+
+[node name="Level4" type="Button" parent="Buttons"]
+offset_left = 715.0
+offset_top = 107.0
+offset_right = 788.0
+offset_bottom = 174.0
+text = "4"
+
+[node name="Level5" type="Button" parent="Buttons"]
+offset_left = 905.0
+offset_top = 107.0
+offset_right = 978.0
+offset_bottom = 174.0
+text = "5"
+
+[connection signal="pressed" from="Buttons/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Buttons/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Buttons/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Buttons/Level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="Buttons/Level5" to="." method="_on_level_5_pressed"]
